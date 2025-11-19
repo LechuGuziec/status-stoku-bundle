@@ -1,0 +1,26 @@
+{
+    "name": "lechuguziec/status-stoku-bundle",
+    "description": "Reusable status stoku bundle with widget, API and EasyAdmin integration.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LechuGuziec\\StatusStokuBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "symfony/framework-bundle": "^6.4 || ^7.0",
+        "symfony/twig-bundle": "^6.4 || ^7.0",
+        "symfony/doctrine-bridge": "^6.4 || ^7.0",
+        "easycorp/easyadmin-bundle": "^4.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^6.4 || ^7.0"
+    },
+    "extra": {
+        "symfony": {
+            "bundle": "LechuGuziec\\\\StatusStokuBundle\\\\StatusStokuBundle"
+        }
+    }
+}

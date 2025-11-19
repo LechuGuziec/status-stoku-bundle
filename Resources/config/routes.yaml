@@ -1,0 +1,13 @@
+status_stoku_bundle:
+    resource: '../../src/Controller/'
+    type: attribute
+
+status_stoku_widget:
+    path: '%status_stoku.widget_route%'
+    controller: LechuGuziec\StatusStokuBundle\Controller\WidgetController::widget
+    methods: ['GET']
+
+status_stoku_api:
+    path: '%status_stoku.api_route%'
+    controller: LechuGuziec\StatusStokuBundle\Controller\WidgetController::api
+    methods: ['GET']

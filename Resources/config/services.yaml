@@ -1,0 +1,13 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    LechuGuziec\StatusStokuBundle\:
+        resource: '../../src/*'
+        exclude: '../../src/{DependencyInjection,StatusStokuBundle.php}'
+
+    LechuGuziec\StatusStokuBundle\Service\StatusStokuProvider:
+        arguments:
+            $cache: '@cache.app'
+            $cacheTtl: '%status_stoku.cache_ttl%'
