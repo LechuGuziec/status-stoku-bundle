@@ -11,7 +11,7 @@ Wielokrotnego użytku pakiet z widżetem statusu stoku narciarskiego, API JSON o
 1. Dodaj do `composer.json` głównej aplikacji wpis repozytorium lub opublikuj pakiet w Packagist.
 2. Zainstaluj bundla:
    ```bash
-   composer require rybno/status-stoku-bundle
+   composer require lechuguziec/status-stoku-bundle
    ```
 3. Zarejestruj bundla w `config/bundles.php`:
    ```php
