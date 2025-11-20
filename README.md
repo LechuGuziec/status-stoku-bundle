@@ -17,7 +17,7 @@ Wielokrotnego użytku pakiet z widżetem statusu stoku narciarskiego, API JSON o
    ```php
    return [
        // ...
-       Rybno\StatusStokuBundle\StatusStokuBundle::class => ['all' => true],
+       LechuGuziec\StatusStokuBundle\StatusStokuBundle::class => ['all' => true],
    ];
    ```
 4. Dodaj routing w `config/routes/status_stoku.yaml`:
@@ -43,10 +43,10 @@ status_stoku:
 - `cache_ttl` – czas współdzielonego cache (sekundy). `null` wyłącza cache i wymusza `private`.
 
 ## EasyAdmin
-1. Zaimportuj encję `Rybno\StatusStokuBundle\Entity\StatusStoku` w Doctrine (`php bin/console doctrine:migrations:diff` jeśli tworzysz tabelę).
+1. Zaimportuj encję `LechuGuziec\StatusStokuBundle\Entity\StatusStoku` w Doctrine (`php bin/console doctrine:migrations:diff` jeśli tworzysz tabelę).
 2. W `DashboardController` skorzystaj z helpera menu:
    ```php
-   use Rybno\StatusStokuBundle\Service\StatusStokuMenuBuilder;
+   use LechuGuziec\StatusStokuBundle\Service\StatusStokuMenuBuilder;
 
    public function __construct(private StatusStokuMenuBuilder $statusMenu) {}
 
